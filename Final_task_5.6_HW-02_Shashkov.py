@@ -126,18 +126,18 @@ while True:
         print('Ходит', name_0)
         move = p2
 
-    x, y = ask()
-    field[x][y] = move
+    i, j = ask()
+    field[i][j] = move
 
     if check_win():
-        field[x][y] = move
+        field[i][j] = move
         show()
         print('Приз победителю !!!')
         print('\u2603')
         break
 
     if num == 9:
-        field[x][y] = move
+        field[i][j] = move
         show()
         print('Ничья')
         break
